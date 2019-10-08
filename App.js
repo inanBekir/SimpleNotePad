@@ -7,10 +7,6 @@ import firebase from 'firebase';
 
 
 
-
-
-
-
 var firebaseConfig = {
   apiKey: "AIzaSyCihLKk1w9H6dtpSf7KvRhKVAc6VvOARgs",
   authDomain: "fir-expdb.firebaseapp.com",
@@ -109,17 +105,15 @@ render(){
           </Body>
           <Right />
         </Header>
-       
-        <Content>
-        
-        
-        <Form>
+        <View style={{flex: 0.4}}>
+            <Form style={{position: 'absolute', left: 0, right: 0, bottom: 0}}>
                 <Textarea rowSpan={5} value={this.state.note} onChangeText={(v)=> this.setState({note:v})} placeholder={'Enter your note.'} />
                 <Button  onPress={(event) => this.saveNote()}>
                     <Icon name='save'/>
                   </Button>
-         </Form>
-                  
+            </Form>
+         </View>
+        <Content>  
            <View style={{height:3,width:'100%',backgroundColor:'red'}}/>
           <Item style={{position: 'relative'}} >
               <FlatList
@@ -169,10 +163,6 @@ render(){
              </Item>
              
         </Content>
-
-        
-    
-   
     </Container>
   );
 }
