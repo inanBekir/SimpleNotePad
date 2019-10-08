@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FirebaseExp",
-    "slug": "FirebaseExp",
+    "name": "simpleNotePad",
+    "slug": "simpleNotePad",
     "privacy": "public",
     "sdkVersion": "34.0.0",
     "platforms": [
@@ -25,7 +25,6 @@
     ],
     "ios": {
       "supportsTablet": true
-    },
-    "description": ""
+    }
   }
 }
